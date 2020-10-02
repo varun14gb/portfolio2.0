@@ -1,0 +1,181 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo{
+    padding: 2rem;
+    margin: 1rem;
+    width: 12rem;
+}
+
+.header {
+    padding: 0;
+    margin: 0;
+}
+.ul {
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.ul li button {
+    border: none;
+    background-color: transparent;
+}
+
+.ul li button svg {
+    width: 6rem;
+}
+
+.active a {
+    border-bottom: thick solid #9C99DD;
+}
+
+.burger {
+    display: none;
+}
+
+.mob {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cross {
+    align-self: flex-end;
+    padding: 1.6rem;
+}
+
+.ul1 {
+    padding: 3rem;
+    padding-top: 0;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    min-width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.ul1 li {
+    display: flex;
+    padding: 0  1rem;
+    align-items: center;
+    width: 25%;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+}
+
+.ul1 li button {
+    border: none;
+    background-color: transparent;
+}
+
+.ul1 li button svg {
+    width: 3rem;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    min-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.social ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    margin-top: 0;
+    padding: 0 1rem;
+  }
+  
+.social ul li {
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: 2rem;
+  }
+
+
+@media screen and (max-width: 1400px) {
+    .ul li {
+        font-size: 1.6rem;
+    }
+    .ul li button svg {
+        width: 3rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .ul {
+        display: none;
+        height: 0;
+    }
+    .logo {
+        width: 10rem;
+        margin: 0;
+    }
+    .burger {
+        position: fixed;
+        right: 10px;
+        top: 1.8rem;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 50%;
+        background-color: rgba(128, 128, 128, 0.15);
+        padding: 1.8rem;
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        width: 8rem;
+    }
+    .burger {
+        padding: 1rem;
+    }
+}

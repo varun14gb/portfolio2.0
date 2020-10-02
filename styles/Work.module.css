@@ -1,0 +1,124 @@
+.sec {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec h1:first-child {
+    font-size: 4rem;
+    font-weight: normal;
+    border-bottom: 8px solid #9C99DD;
+    width: fit-content;
+}
+
+.sec ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.sec ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 1rem;
+    margin: 1rem;
+    background-color: rgba(128, 128, 128, 0.219);
+    border-radius: 8px;
+}
+
+.sec ul>li {
+    flex: 0 45%;
+}
+
+.sec ul li h1 {
+    font-weight: bold;
+}
+
+.img {
+    max-width: 500px;
+    max-height: 500px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img {
+    width: 80%;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.icon {
+    width: 1.8rem;
+    margin-left: 0.6rem;
+    margin-bottom: -4px;
+}
+
+.tag {
+    border-radius: 4px;
+    margin: 4px;
+    padding: 4px 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    float: right;
+}
+
+@media screen and (max-width: 768px) {
+    .sec h1:first-child {
+        font-size: 2rem;
+    }
+    .sec ul{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .sec ul li {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .h1 {
+        font-size: 1.6rem;
+    }
+    .tag {
+        font-size: 1rem;
+    } 
+    .link {
+        font-size: 1.1rem;
+    }
+    .icon {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sec h1:first-child {
+        font-size: 1.6rem;
+    }
+    .sec ul li {
+        margin-bottom: 1.6rem;
+    }
+    .h1 {
+        font-size: 1.3rem;
+    }
+    .link {
+        font-size: 1rem;
+    }
+    .icon {
+        font-size: 1rem;
+    }
+}
