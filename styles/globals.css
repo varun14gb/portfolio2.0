@@ -33,7 +33,7 @@ aside ul {
 }
 
 aside ul li {
-  display: flex;
+  display: inherit;
   align-items: center;
   justify-content: center;
   height: 50px;
